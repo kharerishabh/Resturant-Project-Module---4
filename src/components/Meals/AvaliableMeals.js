@@ -3,30 +3,31 @@ import React from "react";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 import classes from "./AvaliableMeals.module.css";
+import MealItemForm from "./MealItem/MealItemForm";
 
 const DUMMY_MEALS = [
   {
     id: "m1",
-    name: "Sushi",
-    description: "Finest fish and veggies",
+    name: "Dosa",
+    description: "Healthy and with taste of coconut chatni",
     price: 22.99,
   },
   {
     id: "m2",
-    name: "Schnitzel",
-    description: "A german specialty!",
+    name: "Burger",
+    description: "With spicies and meonies",
     price: 16.5,
   },
   {
     id: "m3",
-    name: "Barbecue Burger",
-    description: "American, raw, meaty",
+    name: "Salad",
+    description: "With lots of Tomato and Cucumber",
     price: 12.99,
   },
   {
     id: "m4",
-    name: "Green Bowl",
-    description: "Healthy...and green...",
+    name: "Tomato soup",
+    description: "Healthy...and red...",
     price: 18.99,
   },
 ];
@@ -44,6 +45,7 @@ const AvaliableMeals = () => {
     <section className={classes.meals}>
       <Card>
         <ul>{mealList}</ul>
+        <MealItemForm/>
       </Card>
     </section>
   );
