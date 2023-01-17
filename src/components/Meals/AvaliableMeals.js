@@ -3,7 +3,6 @@ import React from "react";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 import classes from "./AvaliableMeals.module.css";
-import MealItemForm from "./MealItem/MealItemForm";
 
 const DUMMY_MEALS = [
   {
@@ -45,7 +44,6 @@ const AvaliableMeals = () => {
     <section className={classes.meals}>
       <Card>
         <ul>{mealList}</ul>
-        <MealItemForm/>
       </Card>
     </section>
   );

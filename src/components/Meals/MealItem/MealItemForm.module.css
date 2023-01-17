@@ -1,10 +1,6 @@
 .form {
   text-align: right;
 }
-.form label {
-    font-weight: bold;
-    margin-right: 1rem;
-  }
 
 .form button {
   font: inherit;
